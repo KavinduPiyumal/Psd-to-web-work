@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Food</title>
+
+  <meta name="author" content="">
+  <meta name="description" content="This is a basic index template; therefore, the content of this tag will need to be updated later.">
+
+  <!-- Google Fonts -->
+  <style>
+    @font-face {
+      font-family: 'cooper_hewittbold';
+      src: url('fonts/cooperhewitt-bold-webfont.woff2') format('woff2'),
+        url('fonts/cooperhewitt-bold-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="inner-container wide-flex">
+      <div class="flex-container topBar">
+        <h1><a href="#" class="logo">Blog</a></h1>
+        <div class="menu-icon">
+          <a onClick="menu();"><img src="img/svg/menu.svg" alt="Click to expand the main menu."></a>
+        </div>
+      </div>
+      <nav id="loginoutbox">
+        <ul class="main-menu">
+          <li>
+            <a href="#" onClick="closeNavBar();" class="first-link">
+              About
+              <img src="img/svg/chevron.svg" alt="Down Arrow">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onClick="closeNavBar();">Bio</a></li>
+              <li><a href="#" onClick="closeNavBar();">Services</a></li>
+              <li><a href="#" onClick="closeNavBar();">In the Media</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" onClick="closeNavBar();" class="first-link">
+              Things to Do
+              <img src="img/svg/chevron.svg" alt="Down Arrow">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#intro" onClick="closeNavBar();">Good Food</a></li>
+              <li><a href="#travel" onClick="closeNavBar();">Local Travel</a></li>
+              <li><a href="#" onClick="closeNavBar();">Arts & Culture</a></li>
+              <li><a href="#" onClick="closeNavBar();">Family</a></li>
+              <li><a href="#" onClick="closeNavBar();">Festivals</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" onClick="closeNavBar();" class="first-link">
+              Contact
+              <img src="img/svg/chevron.svg" alt="Down Arrow">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#video-blog" onClick="closeNavBar();">Video Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div> <!-- end of .inner-container -->
+  </header>
+
+  <!-- Start of Intro(food) section -->
+  <section id="intro">
+    <div class="intro-left">
+      <div class="title">
+        <h1>Good</h1>
+        <h2>Food</h2>
+      </div>
+      <p>I love to eat! Check out some dishes I've tried and restaurants I recommend you try.</p>
+      <button class="button-main">
+        Discover
+      </button>
+    </div>
+    <div class="intro-images">
+      <div class="image1">
+        <img src="img/breakfast-690128_1920.webp" alt="intro image 1">
+      </div>
+      <div class="image2">
+        <img src="img/platter-2009590_1920.webp" alt="intro image 2">
+      </div>
+    </div>
+  </section>
+
+<!-- End of Intro(food) section -->
+
+<!-- Start of Travel section -->
+  <section id="travel">
+    <div class="left-text">
+      <div class="title">
+        <h1>Local</h1>
+        <h2>Travel</h2>
+      </div>
+      <button class="button-main">
+        Discover
+      </button>
+    </div>
+    <div class="image">
+      <img src="img/water-3271579_1920.webp" alt="travel image">
+    </div>
+  </section>
+<!-- End of Travel section -->
+
+<!-- Start of Stuff section -->
+  <section id="stuff">
+    <div class="title">
+      <img src="img/hearticon.webp" alt="heart image">
+      <h1>Stuff</h1>
+    </div>
+
+    <div class="items-container">
+      <div class="stuff-item">
+        <div class="image">
+          <img src="img/tacos-al-pastor-4351813_1920.webp" alt="stuff images">
+        </div>
+        <div class="itemtitle">
+          <h1>Fresh Prep</h1>
+          <p>Sign up today enjoy the fresh Prep difference. Enjoy a more conveinent and quality meal kit service delivered to your door. <br><br>
+            Use our discount code for 10% off your first purchase.
+          </p>
+          <a href="#">Visit Fresh Prep</a>
+        </div>
+      </div>
+      <div class="stuff-item">
+        <div class="image">
+          <img src="img/farmers-market-colorful-carrots.webp" alt="stuff images">
+        </div>
+        <div class="itemtitle">
+          <h1>Farmers' Market</h1>
+          <p>Edmontonians love farmers’ markets and you should too. You’ll find everything from fresh local produce to hand-made jewellery, clothing, art and unique home goods. There is a market for every part of the city, and we’ve got you covered with this list of favourites.</p>
+          <a href="#">Visit Fresh Prep</a>
+        </div>
+      </div>
+      <div class="stuff-item">
+        <div class="image">
+          <img src="img/inside-the-brewery.webp" alt="stuff images">
+        </div>
+        <div class="itemtitle">
+          <h1>Cabin Brewery</h1>
+          <p>Our brewery has a bright and family-friendly tasting room, a retail area and small patio, open 6 days a week. <br><br>
+            We are super proud of our beautiful brewery and love to show it off. Book a tour to learn more about where we came from and how we make our delicious beer.</p>
+          <a href="#">Visit Fresh Prep</a>
+        </div>
+      </div>
+      <div class="stuff-item">
+        <div class="image">
+          <img src="img/frothy-hot-chocolate-in-mug.webp" alt="stuff images">
+        </div>
+        <div class="itemtitle">
+          <h1>Hot Chocolate Bombs</h1>
+          <p>Hot Chocolate Bombs are chocolate spheres filled with homemade chocolate milk powder and marshmallows that are put into a mug with hot milk for a delicious cup of hot cocoa. Try my Best Homemade Hot Cocoa for another rich and creamy hot chocolate recipe.</p>
+          <a href="#">Visit Fresh Prep</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End of Stuff section -->
+
+<!-- Start of Video Blog section -->
+  <section id="video-blog">
+    <div class="blog-left">
+      <div class="title">
+        <h1>Video</h1>
+        <h2>Blog</h2>
+      </div>
+      <p>Follow me on my YouTube channel to get, news, discounts and more.</p>
+      <button class="button-main">Discover</button>
+    </div>
+    <div class="camera-image">
+      <img src="img/camera-690163_1920.webp" alt="camera image">
+    </div>
+  </section>
+<!-- End of Video Blog section -->
+
+<!-- Strat of Footer section -->
+  <footer>
+    <div class="footer-item">
+      <h1 class="title">About</h1>
+      <a href="" class="footerlinks">Bio</a>
+      <a href="" class="footerlinks">Services</a>
+      <a href="" class="footerlinks">In the Media</a>
+    </div>
+    <div class="footer-item">
+      <h1 class="title">Things to Do</h1>
+      <a href="#intro" class="footerlinks">Good Food</a>
+      <a href="#travel" class="footerlinks">Local Travel</a>
+      <a href="" class="footerlinks">Arts & Culture</a>
+      <a href="" class="footerlinks">Family</a>
+      <a href="" class="footerlinks">Festivals</a>
+    </div>
+    <div class="footer-item">
+      <h1 class="title">Contact</h1>
+      <a href="#video-blog" class="footerlinks">Video Blog</a>
+
+    </div>
+    <div class="footer-item social-icons">
+      <a href="#" class="footerlinks"><img src="img/svg/facebook.svg" alt="facebook"></a>
+      <a href="#" class="footerlinks"><img src="img/svg/instagram.svg" alt="instagram"></a>
+      <a href="#" class="footerlinks"><img src="img/svg/youtube.svg" alt="youtube"></a>
+      <a href="#" class="footerlinks"><img src="img/svg/linkedin.svg" alt="linkedin"></a>
+    </div>
+  </footer>
+<!-- End of Footer section -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

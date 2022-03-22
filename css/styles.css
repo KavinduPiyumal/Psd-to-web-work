@@ -1,0 +1,643 @@
+/* Colours 
+Gray #3a3a3a
+Dark gray #404040
+Light gray #707070
+Orange #c65614
+Dark teal #014b59
+Off  white #f2f2f2
+Yellow #d9b23d
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+/* UNIVERSAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+body {
+    font-family: 'cooper_hewittbold'; 
+}
+
+/* HELPER CLASSES */
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.button-main{
+    background: #404040;
+    color: #f2f2f2;
+    width:160px;
+    padding: 10px 0; 
+    border: none;
+    line-height: 16px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.title {
+    max-width: fit-content;
+}
+/* TYPOGRAPHY */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+      width: 100%;
+  height:auto;
+}
+section{
+    position: relative;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+    width: 100%;
+    padding:0 40px;
+    overflow: hidden;
+}
+/* LARGER VIEWS */
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #3a3a3a;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0;
+}
+.inner-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color:  #f2f2f2;
+    text-decoration: none;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    position:relative;
+    
+}
+header nav ul li a{
+    font-size: 16px;
+    padding:15px 0px;
+    display: block;
+}
+header nav ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    width:100%;
+    font-size: 14px;
+    background: #3a3a3a;
+    display: none;
+
+}
+header nav ul li ul li{
+    width: 100%;
+    font-size: 14px;
+
+    text-align: center;
+}
+header nav ul li ul li a{
+    font-size: 13px; 
+    text-decoration: underline;
+}
+header nav ul li:focus-within > ul, header nav ul li:hover > ul{
+    display: initial;
+}
+.menu-icon{
+    display: flex;
+    align-items: center;
+}
+.menu-icon img{
+    width: 35px;
+    height: 35px;
+    display:none;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(106%) contrast(100%);
+}
+.first-link{
+    display: flex;
+    min-width: 150px;
+    justify-content: center;
+}
+.first-link img{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(106%) contrast(100%);
+}
+
+/*Start style intro section*/
+#intro{
+    display: flex;
+    width: 100vw;
+    flex: 2;
+    width: 100%;
+    margin: 0 auto;
+}
+.intro-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.title {
+    max-width: fit-content;
+}
+.title h1{
+    color: #404040;
+    font-size: 100px;
+    line-height: 100px;
+}
+.intro-left .title h2{
+    color: #707070;
+    font-size: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+.intro-left .title,.intro-left p ,.intro-left .button-main{
+    margin-left: 180px;
+    
+}
+.intro-left p{
+     font-family: 'Merriweather Sans', sans-serif; 
+     padding: 10px 0;
+     padding-right: 30px;
+}
+.intro-images{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 120px;
+    position: relative;
+}
+.intro-images .image1{
+    position: absolute;  
+    right: 20px;
+    width:60%;
+    top: 130px;
+}
+.intro-images .image2{
+    position: absolute;  
+    top: 290px;
+    left: 20px; 
+    width:60%;
+}
+.image1 img, .image2 img{
+    object-fit: cover
+}
+#travel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 0;
+    z-index: 2;
+}
+#travel::after {
+    position: absolute;
+    background-color: #f2f2f2;
+    content: " ";
+    height:50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#travel .left-text{
+    width:fit-content;
+}
+#travel .left-text .button-main{
+    float: right;
+}
+#travel .image{
+    width: 25%;
+}
+#travel .left-text .title h1{
+    color: #014b59;
+    font-size: 100px;
+    line-height: 100px;
+}
+#travel .left-text .title h2{
+    color: #707070;
+    font-size: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-left: 220px;
+    margin-bottom: 20px;
+}
+
+#stuff{
+    min-height:110vh;
+}
+#stuff .title{
+    margin-left: 180px;
+    position: relative;
+}
+#stuff .title h1{
+    margin-top: 10px;
+}
+#stuff .title img{
+    width: 40px;
+    position: absolute;
+    left: -8px;
+    top: -8px;
+}
+.items-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px;
+}
+.stuff-item { 
+    display:block;
+    position: relative;
+    margin:10px;
+    height: auto;
+    flex-grow: 1;   
+    width: calc(100% * (1/4) - 10px - 10px);
+}
+.stuff-item .image{
+    width: 100%;
+    background:#f2f2f2; 
+    padding:20px 15px 40px 15px;
+}
+.stuff-item .itemtitle{
+    margin-left: 15px;
+    margin-top: -20px;
+}
+.stuff-item .itemtitle h1{
+    font-size: 30px;
+    line-height:35px;
+    padding-right: 150px;
+    color: #d9b23d;
+    text-transform: capitalize;
+}
+.stuff-item .itemtitle p{
+    padding: 10px 0;
+    padding-right: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:black;
+}
+.stuff-item .itemtitle a{
+    font-size: 14px;
+    padding: 20px 0 !important;
+    color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#video-blog{
+    display: flex;
+    align-items: center;
+    min-height:75vh;
+}
+#video-blog::after{
+   position: absolute;
+    background-color: #404040;
+    content: " ";
+    height:85%;
+    width: 78%;
+    position: absolute;
+    z-index: -1;
+}
+#video-blog .blog-left{
+    width: 65%;
+    padding-left: 350px;
+}
+#video-blog .title h1{
+    color: #f2f2f2 ;
+}
+#video-blog .title h2{
+    color:  #f2f2f2;
+    font-size: 75px;
+    text-align: left;
+    line-height: 75px;
+}
+#video-blog p{
+    color:  #f2f2f2;
+    padding: 15px 50px;
+    padding-left: 50px;
+    font-size: 13px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#video-blog .button-main{
+    background:  #f2f2f2;
+    color:#404040;
+    margin-left: 50px;
+}
+.camera-image{
+    width:35%;
+}
+
+.footer-item a{
+    color:   #cbc9c9;
+    font-size: 13px;
+    padding:2px 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+footer{
+    background: #404040;
+    display: flex;
+    padding: 50px 0;
+    padding-left: 50px;
+}
+footer .footer-item{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-item h1{
+    color:  #f2f2f2;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.footer-item:last-child{
+    width: 300px;
+    display: flex;
+    flex-direction: row !important;
+}
+.footer-item img{
+    width: 30px;
+     padding: 0 5px;
+    color: #cbc9c9;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(302deg) brightness(106%) contrast(100%);
+}
+
+
+/* MEDIUM VIEW */
+@media only screen and (max-width: 1024px) {
+section{
+    min-height:50vh;
+
+}
+.intro-left{
+    width: 40%;
+}
+.intro-left .title h2{
+    font-size: 90px;
+    padding:15px 10px 15px 60px;
+}
+.intro-images{
+    width: 60%;
+}
+.intro-left .title,.intro-left p ,.intro-left .button-main{
+    margin-left: 0px;   
+
+}
+.intro-images .image1{
+    top: 150px;
+    width: 65%;
+}
+.intro-images .image2{ 
+    width: 65%;
+    top: 300px;
+} 
+#travel{
+    display: flex;
+    align-items: flex-start;
+    min-height: 40vh;
+}
+#travel::after {
+    position: absolute;
+    height:80%;
+}
+#travel .left-text, #travel .image{
+    padding-top: 40px;
+}
+#travel .left-text .title h2{
+    margin-left: 55px;
+    padding:15px 0;
+    font-size: 100px;
+}
+
+.stuff-item {   
+    width: calc(100% * (1/2) - 10px - 10px);
+}
+.stuff-item .itemtitle h1{
+    padding-right: 100px;
+}
+#video-blog{
+    min-height: 50vh;
+}
+#video-blog .blog-left{
+    padding-left: 80px;
+    width: 60%;
+}
+#video-blog::after{
+    height:85%;
+    width: 70%;
+}
+.camera-image{
+    width:50%;
+}
+footer .footer-item{
+    width:170px;
+}
+}
+
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 720px) {
+section{
+    padding: 0 20px;
+}
+.inner-container{
+    padding:0px 15px;
+}
+header .menu-icon img{
+    display: block;
+}
+.topBar{
+    z-index:1;
+    background: #3a3a3a;
+    height: 100%;
+}
+header nav{
+    position: absolute;
+    top: -100vh;
+    z-index: -1;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    padding-right: 15px;
+    background: #3a3a3a;
+    transition: all .8s ease-out;
+}
+header nav ul{
+    flex-direction: column;
+    
+}
+header nav ul li{
+    width: 100%;
+}
+header nav ul li a{
+    text-align: right;
+}
+.first-link{
+    justify-content: flex-end;
+}
+header nav ul li ul{
+    position:relative;
+    width: 100%;
+    display: block;
+}
+
+/*    header nav ul li ul li{
+          width: 100%;
+        left: 0;
+    }
+    header nav ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }*/
+
+#menu-bar:checked >  nav{
+    top: 100%;
+}
+
+#intro{
+    flex-direction: column;
+}
+.intro-left{
+    width: 100%;
+    margin: 0 auto;
+    flex:0;
+    padding:80px 0 40px 0;
+}
+.intro-left .title,.intro-left p ,.intro-left .button-main{
+    margin-left: 0px; 
+}
+.intro-left .title h2{
+    font-size: 100px;
+    padding-top: 15px;
+    padding-left: 70px;
+}
+.intro-left p{  
+    padding: 20px 0;
+    padding-right: 10px;
+}
+.button-main{
+    background: #c65614;
+}
+.intro-images{
+    width: 100%;
+}
+.intro-images .image1{
+    right: 10px;
+    top: 30px;    width: 85%;
+    height:80%;
+}
+.intro-images .image2{ 
+    top: 200px;
+    left: 0px; 
+    width: 70%;
+}
+.image1 img{
+    height:220px;
+}
+.image2 img{
+    height:170px;
+}
+
+
+#travel{
+    flex-direction: column;
+    min-height: 100vh;
+}
+#travel::after{
+    height: 100%;
+}
+#travel .image{
+    width: 78%;
+    margin: 10px 20px auto auto;
+}
+#travel .left-text{
+    width: fit-content;
+    padding: 50px 40px 0px 40px;
+}
+#travel .left-text .title h2{
+    margin-left: 55px;
+    font-size: 100px;
+}
+#stuff{
+    padding-top: 40px;
+}
+#stuff .title{
+    margin: 0px auto;
+
+}
+.stuff-item {   
+    width: calc(100% - 10px - 10px);
+}
+#video-blog {
+    flex-direction: column;
+}
+#video-blog .camera-image{
+    width: 100%;
+}
+#video-blog{
+    height: 80vh;
+    margin-top: 40px;
+}
+#video-blog::after{
+    height:65%;
+    width:calc(100% - 40px);
+}
+#video-blog .blog-left{
+    width: 100%;
+    height: 60%;
+    padding:60px 20px;
+}
+#video-blog p{
+    color:  #f2f2f2;
+    padding: 30px 0px;
+    font-size: 15px;
+}
+#video-blog .button-main{
+    background: #c65614;
+    color:  #f2f2f2;
+    float: right;
+}
+footer{
+    flex-direction: row;
+    flex-wrap:wrap ;
+    margin-top: 20px;
+}
+footer .footer-item{
+    width: 50% !important;
+    margin-bottom: 20px;
+}
+footer .footer-item:last-child{
+    width: 50%;
+
+}
+}
